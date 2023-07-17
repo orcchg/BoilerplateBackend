@@ -1,0 +1,60 @@
+[versions]
+javaVersion = "11"
+
+version-google-api = "2.2.0"
+version-google-integrity = "v1-rev20230105-2.0.0"
+version-gson = "2.10.1"
+version-hamcrest = "2.2"
+version-jacoco = "0.8.8"
+version-jose4j = "0.9.3"
+version-json = "20230227"
+version-junit = "4.13.2"
+version-koin = "3.2.2" # latest 3.3.3 fails
+version-koin-ktor = "3.2.2" # latest 3.3.1 fails
+version-kotlin-std = "1.7.21"
+version-kotlin-coroutines = "1.6.4"
+version-kotlin-serialization = "1.5.0"
+version-ktor = "2.2.4"
+version-logback = "1.4.5"
+version-mockito = "4.1.0"
+version-mockk = "1.13.4"
+version-postgresql-jdbc-driver = "42.5.4"
+version-sqldelight = "1.5.4"
+
+[libraries]
+google-api = { module = "com.google.api-client:google-api-client", version.ref = "version-google-api" }
+google-integrity = { module = "com.google.apis:google-api-services-playintegrity", version.ref = "version-google-integrity" }
+gson = { module = "com.google.code.gson:gson", version.ref = "version-gson" }
+hamcrest = { module = "org.hamcrest:hamcrest", version.ref = "version-hamcrest" }
+jose4j = { module = "org.bitbucket.b_c:jose4j", version.ref = "version-jose4j" }
+json = { module = "org.json:json", version.ref = "version-json" }
+junit = { module = "junit:junit", version.ref = "version-junit" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "version-koin" }
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "version-koin-ktor" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "version-koin" }
+kt-core = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "version-kotlin-std" }
+kt-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "version-kotlin-coroutines" }
+kt-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "version-kotlin-coroutines" }
+kt-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "version-kotlin-std" }
+kt-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "version-kotlin-std" }
+kt-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "version-kotlin-serialization" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "version-ktor" }
+ktor-client-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "version-ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "version-ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "version-ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "version-ktor" }
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "version-ktor" }
+ktor-server-jvm = { module = "io.ktor:ktor-server-core-jvm", version.ref = "version-ktor" }
+ktor-server-netty-core = { module = "io.ktor:ktor-server-netty", version.ref = "version-ktor" }
+ktor-server-netty-jvm = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "version-ktor" }
+ktor-server-contentNegotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "version-ktor" }
+ktor-server-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "version-ktor" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "version-ktor" }
+ktor-server-test-jvm = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "version-ktor" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "version-logback" }
+mockito = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "version-mockito" }
+mockk = { module = "io.mockk:mockk", version.ref = "version-mockk" }
+postgresql-jdbc-driver = { module = "org.postgresql:postgresql", version.ref = "version-postgresql-jdbc-driver" }
+sqldelight-coroutines = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "version-sqldelight" }
+sqldelight-driver-core = { module = "com.squareup.sqldelight:sqlite-driver", version.ref = "version-sqldelight" }
+sqldelight-driver-jdbc = { module = "com.squareup.sqldelight:jdbc-driver", version.ref = "version-sqldelight" }
